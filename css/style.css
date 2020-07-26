@@ -118,6 +118,17 @@ main {
     font-weight: bold;
     margin-bottom: 10px;
 }
+@media (max-width: 800px) {
+    .grid .info h2 {
+        font-size: 18px;
+    }
+    .grid .info p {
+        font-size: 12px;
+    }
+    .grid .icon img {
+        margin-right: 1em;
+    }
+}
 
 #pricing {
     display: flex;
