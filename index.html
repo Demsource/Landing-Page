@@ -6,7 +6,7 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="css/reset.css">
 </head>
-<body>
+<body id="top">
     <div id="page-wrapper">
 
         <header id="header">
@@ -15,19 +15,76 @@
             </div>
             <nav id="nav-bar">
                 <ul>
-                    <li><a href="#" class="nav-link">About Us</a></li>
-                    <li><a href="#" class="nav-link">Enroll to Study</a></li>
+                    <li><a href="#" class="nav-link">What is Accounting ?</a></li>
+                    <li><a href="#" class="nav-link">Study Fields</a></li>
                     <li><a href="#" class="nav-link">Become Our Partner</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
+            <section id="subscribe">
+                <h2>Subscribe to follow our news</h2>
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <input type="email" id="email" placeholder="Enter your email address">
+                    <br>
+                    <input type="submit" id="submit" value="Subscribe">
+                </form>
+            </section>
 
+            <section id="what-is-accounting">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Yj24JwZVd54" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+            <section id="fields">
+                <div id="cost" class="grid">
+                    <div class="icon"><img src="/assets/fields/cost.svg" alt="Cost Accounting image"></div>
+                    <div class="info">
+                        <h2>Cost Accounting</h2>
+                        <p>Cost accounting is defined as "a systematic set of procedures for recording and reporting measurements of the cost of manufacturing goods and performing services in the aggregate and in detail. It includes methods for recognizing, classifying, allocating, aggregating and reporting such costs and comparing them with standard costs." (IMA) Often considered a subset of managerial accounting, its end goal is to advise the management on how to optimize business practices and processes based on cost efficiency and capability. Cost accounting provides the detailed cost information that management needs to control current operations and plan for the future.</p>
+                    </div>
+                </div>
+                <div id="financial" class="grid">
+                    <div id="icon"><img src="/assets/fields/financial.svg" alt="Financial Accounting image"></div>
+                    <div id="info">
+                        <h2>Financial Accounting</h2>
+                        <p>Financial accounting (or financial accountancy) is the field of accounting concerned with the summary, analysis and reporting of financial transactions related to a business. This involves the preparation of financial statements available for public use. Stockholders, suppliers, banks, employees, government agencies, business owners, and other stakeholders are examples of people interested in receiving such information for decision making purposes.</p>
+                    </div>
+                </div>
+                <div id="managerial" class="grid">
+                    <div id="icon"><img src="/assets/fields/managerial.svg" alt="Managerial Accounting"></div>
+                    <div id="info">
+                        <h2>Managerial Accounting</h2>
+                        <p>In management accounting or managerial accounting, managers use the provisions of accounting information in order to better inform themselves before they decide matters within their organizations, which aids their management and performance of control functions.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="pricing">
+                <div class="product" id="beginner">
+                    <h2 class="level">Beginner</h2>
+                    <h3>600$</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="intermediate">
+                    <h2 class="level">Intermediate</h2>
+                    <h3>900$</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="advanced">
+                    <h2 class="level">Advanced</h2>
+                    <h3>1200$</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <button class="btn">Select</button>
+                </div>
+            </section>
         </main>
 
         <footer>
-
+            <div id="back-to-top"><a href="#top">Back To Top</a></div>
+            <div id="copyright"><small>&copy; 2020 by demo</small></div>
         </footer>
 
     </div>
