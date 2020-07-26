@@ -44,9 +44,16 @@ body {
 #nav-bar ul li a {
     color: rgba(0, 0, 0);
     font-weight: bold;
+    font-size: 1em;
 }
 #nav-bar ul li a:hover {
     color: rgba(55, 0, 255, 0.5);
+}
+
+@media (max-width: 800px) {
+    #nav-bar ul li a {
+        font-size: .5em;
+    }
 }
 
 /* main section */
@@ -127,6 +134,16 @@ main {
     text-align: center;
     width: calc(100% / 3);
     margin: 0 1em;
+    box-sizing: border-box;
+}
+@media (max-width: 800px) {
+    .pricing-wrapper {
+        flex-direction: column;
+    }
+    .product {
+        width: 100%;
+        margin-bottom: 1em;
+    }
 }
 .product .level {
     background-color: rgb(220, 220, 220);
