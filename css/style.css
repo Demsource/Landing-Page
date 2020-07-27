@@ -164,6 +164,8 @@ main {
 }
 .product h3 {
     margin: .5em 0;
+    font-weight: bold;
+    font-family: Arial;
 }
 .product p {
     text-align: justify;
